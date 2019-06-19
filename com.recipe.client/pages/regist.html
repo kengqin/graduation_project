@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/regist.css">
+
+
+</head>
+<body>
+
+<div class="root">
+    <div class="contain">
+        <div class="content">
+
+            <div class="head">
+                <div class="head-link">
+                    <a href="../index.html" class="">食谱在线用户注册</a>
+                </div>
+                <div class="desc">
+                    <!--帮您省心,放心,安心.-->
+                </div>
+
+            </div>
+
+            <div class="main">
+
+                <from class="ant-form">
+
+                    <div class="ant-row">
+                        <div class="ant-wrap">
+                            <div class="ant-control">
+                                <input type="text" placeholder="请输入您的手机号" class="ant-input" id="txt_telephone">
+                            </div>
+                            <div class="ant-form-explain" id="tel_error"></div>
+                        </div>
+                    </div>
+
+                    <div class="ant-row">
+                        <div class="ant-wrap">
+                            <div class="ant-control">
+                                <input type="text" placeholder="请输入用户名" class="ant-input" id="txt_name">
+                            </div>
+                            <div class="ant-form-explain" id="name_error"></div>
+                        </div>
+                    </div>
+
+                    <div class="ant-row">
+                        <div class="ant-wrap">
+                            <div class="ant-control">
+                                <input type="password" placeholder="输入至少6位密码" class="ant-input" id="txt_password">
+                                <input type="button" class="ant-eye" id="eye-check" style=" background-image: url('../image/eye.png')">
+                            </div>
+                            <div class="ant-form-explain" id="password_error"></div>
+                        </div>
+                    </div>
+
+                    <div class="ant-row">
+                        <div class="ant-wrap">
+                                <input type="checkbox" class="check-section" id="check_agree">
+                                <span>我已阅读并同意
+                                    <a href="">《食谱在线网注册协议》</a>
+                                </span>
+                            <div class="ant-form-explain" id="check_error"></div>
+                        </div>
+                    </div>
+
+                    <div class="ant-row">
+                        <div class="ant-wrap">
+                            <button type="submit" class="ant-btn" id="btn_regist">
+                                <span>注 册</span>
+                            </button>
+                            <a href="login.html" class="register-login">已有账号?去登录>></a>
+
+                        </div>
+                    </div>
+
+                </from>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<script src="../js/utils.js"></script>
+<script src="../js/regist.js"></script>
+
+</body>
+</html>

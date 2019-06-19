@@ -1,0 +1,17 @@
+sql_mycollection={
+    "get_my_collection":'SELECT college.id,college.scenic_id,scenic_spotty.tname,scenic_spotty.tid,ticket.adult_price FROM scenic_spotty INNER JOIN `user` INNER JOIN college INNER JOIN ticket ON `user`.id=college.user_id AND scenic_spotty.tid=college.scenic_id AND scenic_spotty.tid=ticket.scenic_id WHERE `user`.telephone={telephone}',
+    "del_my_collection":'DELETE FROM college WHERE id={id}',
+    "select_college":"select count(*)as college from college where recipe_id ={recipe_id}",
+    "select_counter":"select count(*) as counter from counter where recipe_id = {recipe_id}",
+    "select_college_on":"select * from college where recipe_id ='{recipe_id}' and user_id ='{user_id}'",
+    "insert_into_college":"insert into college(recipe_id ,user_id ) values ('{recipe_id}','{user_id}')",
+    "delete_college":"delete from college where recipe_id = '{recipe_id}' and user_id = '{user_id}'",
+    "select_counter_on":"select * from counter where recipe_id ='{recipe_id}'and user_id ='{user_id}'",
+    "insert_into_counter":"insert into counter(recipe_id ,user_id ) values ('{recipe_id}','{user_id}')",
+    "delete_counter":"delete from counter where recipe_id = {recipe_id} and user_id ={user_id}",
+    "user_counter":"select count(*) from counter as c inner join user as u on c.user_id =u.id where u.id ={user_id}",
+    "user_counts":"select count(*) as c from counter as c inner join user as u on c.user_id =u.id where c.user_id =(select u.id from user as u inner join recipe as r on u.id = r.user_id where r.id ='{recipe_id}')",
+    "user_colleges":"select count(*) as c from college as c inner join user as u on c.user_id =u.id where c.user_id =(select u.id from user as u inner join recipe as r on u.id = r.user_id where r.id ='{recipe_id}')",
+    "get_comments":"select count(*) as c from comment where recipe_id = {recipe_id}",
+    "user_coun":"select r.id from recipe as r inner join user as u on r.user_id=u.id where u.id=(select u.id from user as u inner join recipe as r on u.id=r.user_id where r.id = {recipe_id})",
+}

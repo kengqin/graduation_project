@@ -1,0 +1,25 @@
+sql_user={
+    "addUser":"insert into user(telephone,password,regist_date,nickname) values('{telephone}','{password}',CURDATE(),'{nickname}')",
+    "getUserById":"select id,password,telephone,email,regist_date,nickname from user where telephone={telephone} limit 1",
+    "getAdminById":"select * from admin_user where telephone='{telephone}' limit 1",
+    "select_uer":"select nickname,email,name,qq,age,sex from user where id={id}",
+    "update_user":"update user set nickname='{nickname}',email='{email}',name='{name}',qq='{qq}',sex='{sex}',age='{age}' where id={id}",
+    "insert_recipe":"insert into recipe(rname,user_id,src) values('{rname}',{user_id},'{src}')",
+    "insert_detail":"insert into detail(recipe_id,src,describes) values({recipe_id},'{src}','{describes}')",
+    "insert_ingredients":"insert into recipe_ingredients(recipe_id,ingredients,amount)values({recipe_id},'{ingredients}','{amount}')",
+    "insert_make":"insert into recipe_make(step,recipe_id)values('{step}',{recipe_id})",
+    "select_recipe":"select r.id,r.rname,r.src,u.nickname from recipe as r inner join user as u on r.user_id=u.id where u.id={user_id} ORDER BY r.id desc",
+    "delete_recipe":"delete from recipe where id={recipe_id}",
+    "delete_detail":"delete from detail where recipe_id={recipe_id}",
+    "delete_ingredients":"delete from recipe_ingredients where recipe_id={recipe_id}",
+    "delete_make":"delete from recipe_make where recipe_id={recipe_id}",
+    "delete_college":"delete from college where recipe_id={recipe_id}",
+    "delete_counter":"delete from counter where recipe_id={recipe_id}",
+    "delete_comment":"delete from comment where recipe_id={recipe_id}",
+    "select_alluser":"select id,nickname,name,telephone,sex from user",
+    "select_userinfo":"select id,nickname,name,telephone,sex from user where nickname like '%{user_id}%'",
+    "update_userinfo":"update user set nickname='{nickname}',name='{name}',sex='{sex}',telephone='{telephone}' where id={id}",
+    "select_adm":"select id,nickname,name,telephone,sex from user where id={id}",
+
+
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>食谱详情</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/sceip_detail.css">
+
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default my_container">
+    <div class="container my_nav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="nav_btn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand title" href="###">食谱在线</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse nav_hidden" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav nav-left">
+                <li class="ss"><a href="#"></a></li>
+                <li class="ss"><a href="#"></a></li>
+                <li class="ss"><a href="#"></a></li>
+                <li class="ss"><a href="#"></a></li>
+                <li class="ss"><a href="#"></a></li>
+                <li class="ss"><a href="#"></a></li>
+                <li><a href="../index.html" class="a1">首页</a></li>
+                <li class="ss"><a href="#"></a></li>
+                <li><a href="search_recipe.html" class="a1">食谱大全</a></li>
+                <li class="ss"><a href="#"></a></li>
+                <!--<li><a href="search_recipe.html" class="a1">美食达人</a></li>-->
+                <!--<li class="ss"><a href="#"></a></li>-->
+                <li><a href="admin_login.html" class="a1" target="_blank">管理登录</a></li>
+                <li class="ss"><a href="#"></a></li>
+                <!--<li><a href="./pages/regist.html" class="a1 register" style="color: #28c0ac !important;">注册</a></li>-->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="ss">
+                    <a href="search_recipe.html"><img src="../image/search_icon.svg" alt="" style="margin-right: 10px;margin-top: -4px" class="searchicon"></a>
+                </li>
+                <li><a href="login.html" class="a1 login" style="color: #28c0ac !important;">登录</a></li>
+                <li class="ss s1"><a href="#" style="color: #28c0ac !important;">|</a></li>
+                <li><a href="regist.html" class="a1 register" style="color: #28c0ac !important;">注册</a></li>
+                <li><a href="#" class="a1 nick_name"></a></li>
+                <li><a href="#" class="out"></a></li>
+
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+    <!--食谱详情开始-->
+    <div class="middles">
+        <div class="middle_middle">
+            <div class="middle_left">
+                <h3 class="recipe_title"></h3>
+                <div class="img-size">
+                    <img src="" alt="" class="picture">
+                </div>
+                <h4 class="dis"></h4>
+                <div class="down">
+                    <div class="dianzan"><span class="glyphicon glyphicon-thumbs-up">点赞菜谱</span></div>
+                    <div class="dianzan1"><span class="glyphicon glyphicon-thumbs-up">点赞菜谱</span></div>
+
+                    <!--<div class="dianzan3" style="cursor: pointer"><span class="glyphicon glyphicon-thumbs-up">点赞菜谱</span></div>-->
+                    <!--<div class="dianzan1" style="color:orange"><span class="glyphicon glyphicon-thumbs-up">取消点赞</span></div>-->
+
+                    <div class="shoucang"><span class="glyphicon glyphicon-heart-empty">收藏菜谱</span></div>
+                    <div class="shoucang1"><span class="glyphicon glyphicon-heart-empty">收藏菜谱</span></div>
+                    <!--<div class="shoucang3" style="cursor: pointer"><span class="glyphicon glyphicon-heart-empty">收藏菜谱</span></div>-->
+                    <!--<div class="shoucang1" style="color:orange"><span class="glyphicon glyphicon-heart-empty">取消收藏</span></div>-->
+                    <div class="dianzanshu">
+                       <span></span>
+                    </div>
+                    <div class="shoucangshu">
+                       <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="middle_right">
+                <div class="right-top">
+                    <div class="top-user">
+                        美食达人用户:程鑫
+                    </div>
+                    <!--<div class="down-user">-->
+                        <!--+关注-->
+                    <!--</div>-->
+                </div>
+                <div class="right-down">
+                    <ul>
+                        <li id="counte">
+                            <!--点赞数&nbsp;<span style="font-weight: 700;font-size: 1.5em">0</span>-->
+                        </li>
+                        <li>|</li>
+                        <li id="college">
+                            <!--收藏数<span style="font-weight: 700;font-size: 1.5em" >0</span>-->
+                        </li>
+                        <!--<li>|</li>-->
+                        <!--<li>-->
+                            <!--关注数<span style="font-weight: 700;font-size: 1.5em"> 0</span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="middle-bottom">
+        <div class="center">
+            <div class="middle_left1">
+                <h3>需要食材</h3>
+                <ul class="material">
+
+                </ul>
+                <!--<h4>饭团巧变炸热狗！剩饭团华丽变身炸热狗，还能认出这是剩饭团，算我输~</h4>-->
+                <!--<div class="down">-->
+                    <!--<div class="dianzan"><span class="glyphicon glyphicon-thumbs-up">点赞菜谱</span></div>-->
+                    <!--<div class="shoucang"><span class="glyphicon glyphicon-heart-empty">收藏菜谱</span></div>-->
+                <!--</div>-->
+            </div>
+            <div class="middle_right1">
+
+            </div>
+        </div>
+    </div>
+    <div class="middle-bottom">
+        <div class="center">
+            <div class="middle_left1">
+                <h3>做法</h3>
+                <div class="acticle">
+
+                </div>
+            </div>
+            <div class="middle_right1">
+
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="comment_center">
+            <div class="comment_left">
+                <span style="font-size: 2em;">评论</span>
+                <span style="color:orange" id="con"></span>
+                <hr />
+                <div class="comment_content">
+                    <img src="http://www.ecook.cn/resources/v1/images/icon_user.png" alt="">
+                    <textarea rows="4" cols="90" style="padding: 10px" placeholder="请输入您对此食谱的评论哦~" maxlength="50" id="textarea"></textarea>
+                </div>
+                <div class="remove">
+                    评论
+                </div>
+
+                <!--<hr>-->
+                <div class="comment_a">
+                    <!--<div class="comment_article">-->
+                        <!--<div class="username">-->
+                            <!--<span>美食达人:程鑫</span>-->
+                            <!--<span style="color:grey;margin-left:20px;">05-10 09:29</span>-->
+                        <!--</div>-->
+                        <!--<div class="comment_text">-->
+                            <!--&lt;!&ndash;<h4>回复内容:</h4>&ndash;&gt;-->
+                            <!--<div class="comm">-->
+                                <!--哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或或-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;<div style="width: 100%;height:1px;background-color:rgba(0,0,0,0.08);margin-top: 10px">&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--</div>-->
+
+                </div>
+                <div class="more">
+                    查看更多
+                </div>
+            </div>
+            <div class="middle_right1">
+
+            </div>
+        </div>
+
+    </div>
+    <!--页面底部-->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-xs-12">
+                <p>作者：程鑫</p>
+                <p>友情链接： 百度 | 腾讯 | 阿里云 | 股加加 | 苏州股交中心 | 企查查</p>
+                <p>版权所有 © 2019- 食谱在线网 保留所有权利 - 苏ICP备号20190512/京公网安备20190512</p>
+            </div>
+        </div>
+    </div>
+</nav>
+<script src="../js/utils.js"></script>
+<script src="../js/sceipe_detail.js"></script>
+
+</body>
+</html>

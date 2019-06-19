@@ -1,0 +1,135 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #F8F8F8;
+}
+
+/*导航*/
+.my_container{
+    /*background-color: rgba(0, 0, 0, 0.2);*/
+    background-color: #4d4d4d;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 0;
+    border: none;
+}
+.title{
+    color: #28c0ac !important;
+    font-size: 30px;
+    padding: 0;
+    margin-top: 15px;
+}
+.title img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.my_nav,my_nav01{
+    height: 80px;
+    padding-top: 16px;
+    box-sizing: border-box;
+}
+.my_nav ul li a{
+    font-size: 16px;
+    color: white !important;
+    font-weight: 500;
+}
+.my_nav ul li .a1:hover{
+    color: #28c0ac !important;
+}
+@media (max-width: 767px) {
+    .nav_hidden{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+.searchicon:hover{
+    cursor:pointer;
+    /*background-color:#28c0ac;*/
+}
+
+.centers{
+    width: 100%;
+    overflow: hidden;
+    background-color:#e6e6e6;
+    padding: 20px;
+    /*margin-bottom:s 400px;*/
+
+}
+.centers .top{
+    width:40%;
+   overflow: hidden;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: solid 1px white;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.text{
+    padding-left: 10px;
+    width:450px;
+    height: 50px;
+    font-size: 1.2em;
+}
+.btn{
+    width: 120px;
+    height: 50px;
+    background-color: orange;
+    font-size: 1.2em;
+    text-align:center;
+    line-height: 40px;
+    color:white;
+}
+.middle_list{
+    width:50%;
+    overflow: hidden;
+    /*padding: 10px;*/
+    margin: 0 auto;
+    /*background-color: #00b3ee;*/
+}
+.middle{
+    width:100%;
+   height: 220px;
+    background-color: white;
+    margin: 0 auto;
+    /*border-radius: 5px;*/
+    border: solid 1px white;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+.middle:hover{
+    border:solid 1px red
+}
+.recipe_img{
+    width: 45%;
+}
+.middle_right{
+    width:45%;
+}
+/*底部*/
+.footer{
+    background-color:  #4d4d4d;
+    text-align: center;
+}
+.footer_link{
+    color: #D8902D;
+    font-size: 16px;
+}
+.footer>div:first-child{
+    padding: 10px 0;
+    border-bottom: solid 1px #777777;
+    box-sizing: border-box;
+}
+.footer>div:last-child{
+    padding: 20px 0 30px 0;
+    box-sizing: border-box;
+}
+.footer>div:last-child p{
+    color: #AFA9A9;
+}
+.footer>div:last-child b{
+    color: #D8902D;
+}
