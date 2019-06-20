@@ -2,7 +2,7 @@
  * Created by lzhan on 2019/1/8.
  */
 // var api = 'http://10.10.200.187:8080'
-var api='http://192.168.43.51:8080/api/';
+var api='http://localhost:8080/api/';
 function getData(url,args=null,headers=null,cb) {
     var oAjax = null;
     oAjax = new XMLHttpRequest() || new ActiveXObject('Microsoft.XMLHTTP');
